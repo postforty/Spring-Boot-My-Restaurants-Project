@@ -2,6 +2,8 @@ package com.example.restaurant.naver.dto;
 
 import java.util.List;
 
+import com.example.restaurant.naver.dto.SearchImageRes.SearchImageItem;
+
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -22,10 +24,14 @@ public class SearchLocalRes {
 	@NoArgsConstructor
 	@AllArgsConstructor
 	public static class SearchLocalItem{
+		private String category;
 		private String title;
 		private String link;
-		private String thumbnail;
-		private String sizeheight;
-		private String sizewidth;
+		private String description;
+		private String telephone;
+		private String address;
+		private String roadAddress;
+		private int mapx;
+		private int mapy;
 	}
 }

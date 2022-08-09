@@ -1,9 +1,12 @@
-package com.example.restaurant.wishlist;
+package com.example.restaurant.wishlist.repository;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+
+import com.example.restaurant.wishlist.WishListRepository;
+import com.example.restaurant.wishlist.entity.WishListEntity;
 
 @SpringBootTest
 public class WishListRepositoryTest {
