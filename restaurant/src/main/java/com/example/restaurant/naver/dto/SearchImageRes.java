@@ -9,23 +9,27 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class SearchLocalRes {
+public class SearchImageRes {
 	
 	private String lastBuildDate;
 	private int total;
 	private int start;
 	private int display;
-	private List<SearchLocalItem> items;
+	private String category;
+	private List<SearchImageItem> items;
 	
 	
 	@Data
 	@NoArgsConstructor
 	@AllArgsConstructor
-	public static class SearchLocalItem{
+	public static class SearchImageItem{
 		private String title;
 		private String link;
-		private String thumbnail;
-		private String sizeheight;
-		private String sizewidth;
+		private String description;
+		private String telephone;
+		private String address;
+		private String roadAddress;
+		private int mapx;
+		private int mapy;
 	}
 }
