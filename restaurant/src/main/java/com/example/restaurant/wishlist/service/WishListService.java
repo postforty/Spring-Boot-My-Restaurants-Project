@@ -1,5 +1,8 @@
 package com.example.restaurant.wishlist.service;
 
+import java.util.List;
+import java.util.stream.Collectors;
+
 import org.springframework.stereotype.Service;
 
 import com.example.restaurant.naver.NaverClient;
@@ -91,5 +94,9 @@ public class WishListService {
 		return dto;
 		
 		
+	}
+
+	public List<WishListDto> findAll() {
+		return wishListRepository.listAll().stream().map(it -> entityToDto(it)).collect(Collectors.toList());
 	}
 }
