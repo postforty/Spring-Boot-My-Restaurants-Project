@@ -1,4 +1,4 @@
-package com.example.restaurant.wishlist;
+package com.example.restaurant.wishlist.repository;
 
 import org.springframework.stereotype.Repository;
 
